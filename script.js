@@ -1,8 +1,8 @@
 const users = [
     {
-        nom: "Kiki🫁🩸❤️🔐",
-        username:"kiki@",
-        password:"passer",
+        nom: "Birane",
+        username:"b",
+        password:"p",
         messages: [
             {text:"Slt Tata", date: "10/10/2024 10:10",user:1},
             
@@ -17,11 +17,11 @@ const users = [
         ]
     },
     {
-        nom: "Tata💪🏿",
+        nom: "Tata",
         username:"tata",
-        password:"passer",
+        password:"p",
         messages: [
-            {text:"Slt Kiki", date: "10/10/2024 10:10",user:0},
+            {text:"Slt Birane", date: "10/10/2024 10:10",user:0},
             {text:"Slt Bro", date: "10/10/2024 10:10"},
             {text:"Le prof est mort", date: "10/10/2024 10:10"},
             {text:"Srx?", date: "10/10/2024 10:10"},
@@ -30,9 +30,9 @@ const users = [
         ]
     },
     {
-        nom: "Breukh😎👍🏾",
-        username:"breukh",
-        password:"passer",
+        nom: "Malick",
+        username:"mvlck",
+        password:"p",
         messages: [
             {text:"Slt Yaya", date: "10/10/2024 10:10"},
             {text:"Slt, tu as fais le projet js?", date: "10/10/2024 10:10"},
@@ -43,9 +43,9 @@ const users = [
         ]
     },
     {
-        nom: "Fatou Ndiaye ❤️🔐",
-        username:"fatou",
-        password:"passer",
+        nom: "Modou Ndiaye",
+        username:"modoulo",
+        password:"p",
         messages: [
             {text:"Slt Bro", date: "10/10/2024 10:10"},
             {text:"Slt Bro", date: "10/10/2024 10:10"},
@@ -53,9 +53,9 @@ const users = [
         ]
     },
     {
-        nom: "Bernadette🩸",
-        username:"bernie",
-        password:"passer",
+        nom: "Bamba",
+        username:"bam",
+        password:"p",
         messages: [
             {text:"Slt Bro", date: "10/10/2024 10:10"},
             {text:"Slt Bro", date: "10/10/2024 10:10"},

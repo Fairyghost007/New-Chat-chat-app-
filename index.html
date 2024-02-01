@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,63 @@
 </head>
 <body>
     <div class="connexion">
-        <h2>Breukh-Chat</h2>
-        <div>
-            <label for="login">Login</label>
+        <h2>New-Chat</h2>
+        <div class="input">
+            <label for="login">Login:</label>
             <input type="text" id="login">
         </div>
-        <div>
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password">
+        <div class="input">
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" >
         </div>
         <br>
         <button class="btnConnexion">Se connecter</button>
     </div>
     <div class="container">
-        <h1><span>Breukh Chat</span></h1>
-        <p class="user">Celui qui c'est connecté</p>
+      <div class="sidebar">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div class="option">
+          <i class="fa-solid fa-message" ></i>
+          <i class="fa-solid fa-user-group"></i>
+          <i class="fa-solid fa-arrows-turn-to-dots" ></i>
+          <i class="fa-solid fa-archive" ></i>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
         <div class="box">
-            <div class="list"></div>
+          <div class="search">
+            <input type="text" class="searchbar" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="list"></div>
+        </div>
+            
             <div class="content">
-                <h2><span id="msgOwner">Messages de Toto</span> <span class="writting stop">Ecrit...</span></h2>
-                <div class="messages">
-                    <div class="message">
-                        <div class="text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reprehenderit quos ullam quasi cumque veritatis aperiam eaque molestiae earum quod.
-                        </div>
-                        <div class="date"><span>10/10/2024 10:00</span></div>
-                    </div>
+              <div class="topbar">
+                <div class="infos">
+                  <div class="img-info">B</div>
+                  <div><span id="msgOwner">Toto<span><span class="writting stop">Ecrit...</div>
                 </div>
+                <div class="topoptions">
+                  <i class="fa-solid fa-delete-left"></i>
+                  <i class="fa-solid fa-archive" ></i>
+                  <i class="fa-solid fa-square"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+                    <div class="messages">
+                        <div class="message">
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reprehenderit quos ullam quasi cumque veritatis aperiam eaque molestiae earum quod.
+                            </div>
+                            <div class="date"><span>10/10/2024 10:00</span></div>
+                        </div>
+                    </div>
                 <div class="new-message">
-                    <textarea cols="30" rows="10"></textarea>
+                    <textarea cols="30" rows="2"></textarea>
                     <button class="send">Envoyer</button>
                 </div>
             </div>
-        </div>
     </div>
 
 
