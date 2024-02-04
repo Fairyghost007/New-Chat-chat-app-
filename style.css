@@ -81,22 +81,31 @@ h1 span{
     padding: 20px;
     border-radius: 50% 50% 0 0;
 }
-
+.title h2{
+  text-align:start;
+  margin:5px 10px;
+}
 .box{
     width: 40%;
     display: flex;
+    gap:20px;
   overflow: scroll;
     flex-direction:column;
 /*     background-color: var(--primary-color); */
-    padding:10px;
+    padding:5px;
   border-right: 1px solid gray;
 }
 .searchbar{
   width:80%;
-  background-color:#dfe0ed;
-  border:1px solid gray;
+  border:2px solid rgb(0, 0, 0);
   border-radius:7px;
   height:20px;
+  padding:10px;
+  
+  
+}
+.searchbar:active{
+    border: 2px solid var(--primary-color);
 }
 .sidebar{
   background-color: var(--primary-color);
@@ -107,30 +116,44 @@ h1 span{
   display: flex;
   flex-direction: column;
   align-items:center;
-  justify-content:space-between
+  gap:30px;
+  /* justify-content:space-between */
+}
+.sidebar i{
+  color:white;
+  /*   background-color:var(--primary-color); */
+    font-size:26px;
 }
 .option{
   display: flex;
   flex-direction: column;
   align-items:center;
-/*   background-color:black; */
-  height:80%;
+  /* background-color:black; */
   gap:30px
   
 }
-i{
+.option i {
   color:white;
-/*   background-color:var(--primary-color); */
   font-size:26px;
 }
-i:hover{
-  color:#dfe0ed;
-  font-size:27px;
+.option i:hover{
+  color:#9d9fc2;
+  font-size:26px;
+}
+.option i.active {
+  color:#9d9fc2;
+  font-size:26px;
 }
 .search i{
-    color:var(--primary-color);
+    color:black;
 /*   background-color:var(--primary-color); */
   font-size:15px;
+}
+.search i:hover{
+    color:black;
+/*   background-color:var(--primary-color); */
+  font-size:16px;
+  overflow:hidden;
 }
 .search{
   display: flex;
@@ -146,11 +169,11 @@ i:hover{
 .topbar{
     border-bottom:1px solid var(--primary-color);
     width:100%;
-    padding:3px 5px;
+    padding:5px 10px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-  background-color:white;
+    background-color:white;
     border-radius: 10px 10px 0px 0px;
       
 }
@@ -158,23 +181,30 @@ i:hover{
     width: 70%;;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap:5px;
 /*   background-color:red; */
 }
 .img-info{
-  width:20px;
+  width:30px;
   border-radius:50px;
-  heigth:20px;
+  height:30px;
   background-color:var(--primary-color);
   text-align:center;
   color:white;
 }
+.img-info img{
+    object-fit:cover;
+    width:30px;
+    height: 30px;
+    border-radius:50px;
+}
 .topoptions{
-/*   background-color:var(--primary-color); */
+  /* background-color:var(--primary-color); */
   width:30%;
   display: flex;
   flex-direction: row;
-  gap:20px;
+  gap:10px;
   justify-content:end;
     
   
@@ -182,6 +212,20 @@ i:hover{
 .topoptions i{
   color:var(--primary-color);
   font-size:18px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.topoptions i:hover{
+  background-color:var(--primary-color);
+  height: 25px;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color:white;
 }
 .list{
     padding-right: 10px;
@@ -189,12 +233,14 @@ i:hover{
 }
 
 .item{
-    border-bottom: 2px solid black;
-    padding: 20px 0;
+    border-bottom: 1px solid black;
+    padding: 10px 5px;
     min-width: max-content;
     color:black;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    gap:5px;
+    align-items: center;
 }
 
 .item:hover{
@@ -203,6 +249,7 @@ i:hover{
     cursor: pointer;
     color:white;
    min-width: max-content;
+   border-radius: 10px;
 }
 
 .content{
