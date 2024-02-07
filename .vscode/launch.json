@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/private/var/folders/jh/6yk9lmzx6l57__1vylsr82vm0000gn/T/net.whatsapp.WhatsApp/documents/8ED37A7F-660C-4639-BE8B-0E3DCE852114",
+      "program": "/private/var/folders/jh/6yk9lmzx6l57__1vylsr82vm0000gn/T/net.whatsapp.WhatsApp/documents/8ED37A7F-660C-4639-BE8B-0E3DCE852114/build/Debug/outDebug"
+    }
+  ]
+}

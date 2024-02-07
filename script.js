@@ -15,7 +15,8 @@ const users = [
             {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: "10/10/2024 10:10"},
             {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: "10/10/2024 10:10"},
             {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: "10/10/2024 10:10"},
-        ]
+        ],
+        contact:["tata","mvlck","modoulo","bam"]
     },
     {
         nom: "Tata",
@@ -83,6 +84,7 @@ const btnSend = document.querySelector(".send");
 const writting = document.querySelector(".writting");
 const container = document.querySelector(".container");
 const connexion = document.querySelector(".connexion");
+const add_user_form = document.querySelector(".add_user_form");
 //
 const btnConnexion = document.querySelector(".btnConnexion");
 const usernameInput = document.querySelector("#login");
@@ -105,19 +107,19 @@ function printList() {
     users.forEach(function (usr, i) {
         if (i !== posConnectedUser) {
             // Check for the updated status directly in the users array
-            const updatedStatus = users[i].status === 'archiver';
+            // const updatedStatus = users[i].status === 'archiver';
 
-            if (activeIconClass === 'fa-message' && !updatedStatus) {
-                list.innerHTML += `<div class="item"><div class="img-info"><img src="${usr.img}" alt="" id="profilImg"></div><div  onclick="detailsUser(${i})">${usr.nom}</div></div>`;
-            } else if (activeIconClass === 'fa-archive' && updatedStatus) {
-                list.innerHTML += `<div class="item"><div class="img-info"><img src="${usr.img}" alt="" id="profilImg"></div><div  onclick="detailsUser(${i})">${usr.nom}</div></div>`;
+            if (activeIconClass === 'fa-message' && usr.status === "") {
+                list.innerHTML += `<div class="item"><div class="img-info"><img src="${usr.img}" alt="" class="profilImg"></div><div  onclick="detailsUser(${i})">${usr.nom}</div></div>`;
+            } else if (activeIconClass === 'fa-archive' && usr.status === "archiver") {
+                list.innerHTML += `<div class="item"><div class="img-info"><img src="${usr.img}" alt="" class="profilImg"></div><div  onclick="detailsUser(${i})">${usr.nom}</div></div>`;
             }
         }
     });
 }
 
 // Event listener for the archive icon
-const archiveIcon = document.querySelector(".fa-archive");
+const archiveIcon = document.querySelector(".topoptions .fa-archive");
 archiveIcon.addEventListener('click', function () {
     // Update the status of the selected user to "archiver"
     if (posUserActual !== -1) {
@@ -128,7 +130,29 @@ archiveIcon.addEventListener('click', function () {
     printList();
 });
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+const trashIcon = document.querySelector(".fa-trash");
+
+trashIcon.addEventListener('click', function () {
+    // Check if a user is selected
+    if (posUserActual !== -1) {
+        // Remove the user from the users array
+        users.splice(posUserActual, 1);
+
+        // Reset posUserActual since the user is removed
+        posUserActual = -1;
+
+        // Reprint the list directly using the updated users array
+        printList();
+
+        // Clear the displayed messages since the user is removed
+        messages.innerHTML = '';
+        msgOwner.textContent = '';
+        profilImg.src = '';
+    }
+});
 
 
 function detailsUser(position){
@@ -190,6 +214,7 @@ btnConnexion.addEventListener('click',function(){
     }
     container.classList.remove('hide');
     connexion.classList.add('hide');
+    add_user_form.classList.add('hide');
     printList();
 })
 //
@@ -212,6 +237,7 @@ btnSend.addEventListener('click',function(){
     isWritting();
 })
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const deleteButton = document.querySelector(".fa-delete-left");
 
@@ -233,6 +259,7 @@ function deleteMessages() {
 // Event listener for the delete button
 deleteButton.addEventListener('click', deleteMessages);
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 const rightBracketIcon = document.querySelector(".fa-right-from-bracket");
@@ -243,6 +270,7 @@ rightBracketIcon.addEventListener('click', function () {
     connexion.classList.remove('hide');
 });
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -275,10 +303,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const plusIcon = document.querySelector(".fa-plus");
+const addUserForm = document.querySelector(".add_user_form");
+
+plusIcon.addEventListener('click', function () {
+    // Toggle visibility of the add user form
+    addUserForm.classList.toggle('hide');
+    // Apply blur effect to the container if needed
+    container.classList.toggle('blur');
+});
 
 
 
 
 window.onload = function(){
     container.classList.add('hide');
+    add_user_form.classList.add('hide');
 }

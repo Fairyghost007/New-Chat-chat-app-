@@ -27,7 +27,8 @@ body{
     display: flex;
     flex-direction: row;
     background-color:#dfe0ed;
-  gap:10px
+  gap:10px;
+  
     
 }
 .connexion{
@@ -37,11 +38,41 @@ body{
   flex-direction:column;
   align-items:start;
   border-radius:10px;
-  color:white
+  color:white;
   
   
   
 }
+/* Keyframes for the animation */
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -100%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.add_user_form {
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--primary-color);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1; /* Set a high z-index value */
+  transform: translate(-50%, -100%); /* Initially off-screen */
+  animation: slideIn 0.3s ease forwards; /* Apply the animation */
+}
+
+
+
+
 .input{
 /*   background-color:#55c425; */
   width:260px;
@@ -61,12 +92,17 @@ body{
 }
 
 
-
+.container.blur{
+  filter: blur(3px) brightness(0.8);
+}
 .container.hide,
-.connexion.hide{
+.connexion.hide,
+.add_user_form.hide{
     display: none;
 }
-
+.blur-effect {
+  filter: blur(5px);
+}
 h1{
     text-align: center;
 }
