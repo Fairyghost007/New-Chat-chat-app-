@@ -6,15 +6,15 @@ const users = [
         password:"",
         img:"../img/profile2.png",
         messages: [
-            {text:"Slt Tata", date: "10/10/2024 10:10",user:1},
-            {text:"Slt Naka War", date: "10/10/2024 10:10"},
-            {text:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, voluptate?", date: "10/10/2024 10:10"},
-            {text:"Lorem ipsum dolor, sit amet consectetur", date: "10/10/2024 10:10"},
-            {text:"cv je bien ca fait bay", date: "10/10/2024 10:10",user:1},
-            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: "10/10/2024 10:10"},
-            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: "10/10/2024 10:10"},
-            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: "10/10/2024 10:10"},
-            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: "10/10/2024 10:10"},
+            {text:"Slt Tata", date: " 10:10",user:1},
+            {text:"Slt Naka War", date: " 10:10"},
+            {text:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, voluptate?", date: " 10:10"},
+            {text:"Lorem ipsum dolor, sit amet consectetur", date: " 10:10"},
+            {text:"cv je bien ca fait bay", date: " 10:10",user:1},
+            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: " 10:10"},
+            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: " 10:10"},
+            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: " 10:10"},
+            {text:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aut neque nihil, voluptates ut soluta doloremque quisquam mollitia distinctio, voluptatem sint aliquid odit. Architecto similique ipsa, suscipit voluptatibus maiores magnam?", date: " 10:10"},
         ],
         contact:["tata","mvlck","modoulo","bam"]
     },
@@ -25,12 +25,12 @@ const users = [
         password:"p",
         img:"../img/profile3.png",
         messages: [
-            {text:"Slt Birane", date: "10/10/2024 10:10",user:0},
-            {text:"Slt Bro", date: "10/10/2024 10:10"},
-            {text:"Le prof est mort", date: "10/10/2024 10:10"},
-            {text:"Srx?", date: "10/10/2024 10:10"},
-            {text:"C'est une bonne nouvelle ca?", date: "10/10/2024 10:10"},
-            {text:"oui tout le monde est content wollah", date: "10/10/2024 10:10"},
+            {text:"Slt Birane", date: " 10:10",user:0},
+            {text:"Slt Bro", date: " 10:10",user:""},
+            {text:"Le prof est mort", date: " 10:10",user:0},
+            {text:"Srx?", date: " 10:10",user:""},
+            {text:"C'est une bonne nouvelle ca?", date: " 10:10",user:0},
+            {text:"oui tout le monde est content wollah", date: " 10:10",user:""},
         ]
     },
     {
@@ -40,12 +40,12 @@ const users = [
         password:"p",
         img:"../img/profile4.png",
         messages: [
-            {text:"Slt Yaya", date: "10/10/2024 10:10"},
-            {text:"Slt, tu as fais le projet js?", date: "10/10/2024 10:10"},
-            {text:"OUi mais je crois que je vais avoir 0 😭", date: "10/10/2024 10:10"},
-            {text:"mais traoure est foutu, tu c?", date: "10/10/2024 10:10"},
-            {text:"abon pk?", date: "10/10/2024 10:10"},
-            {text:"parce qu'il a eu un seul fichier 🤣", date: "10/10/2024 10:10"},
+            {text:"Slt Yaya", date: " 10:10",user:0},
+            {text:"Slt, tu as fais le projet js?", date: " 10:10",user:""},
+            {text:"OUi mais je crois que je vais avoir 0 😭", date: " 10:10",user:0},
+            {text:"mais traoure est foutu, tu c?", date: " 10:10",user:""},
+            {text:"abon pk?", date: " 10:10",user:0},
+            {text:"parce qu'il a eu un seul fichier 🤣", date: " 10:10",user:""},
         ]
     },
     {
@@ -55,9 +55,9 @@ const users = [
         password:"p",
         img:"../img/profile5.png",
         messages: [
-            {text:"Slt Bro", date: "10/10/2024 10:10"},
-            {text:"Slt Bro", date: "10/10/2024 10:10"},
-            {text:"Slt Bro", date: "10/10/2024 10:10"},
+            {text:"Slt Bro", date: " 10:10",user:0},
+            {text:"Slt Bro", date: " 10:10",user:""},
+            {text:"et la famille", date: " 10:10",user:0},
         ]
     },
     {
@@ -67,9 +67,35 @@ const users = [
         password:"p",
         img:"../img/profile6.png",
         messages: [
-            {text:"Slt Bro", date: "10/10/2024 10:10"},
-            {text:"Slt Bro", date: "10/10/2024 10:10"},
+            {text:"Slt Bro", date: " 10:10",user:0},
+            {text:"Slt Bro", date: " 10:10",user:""},
         ]
+    },
+    {
+        nom: "Maïmouna",
+        username: "DJiné Maïmouna",
+        status: "",
+        password: "password123",
+        img: "../img/profile7.png",
+        messages: [
+            { text: "boy!", date: " 10:10",user:0 },
+            { text: "nkm", date: " 10:10",user:"" },
+            { text: "send ma affaire yii", date: " 10:10",user:0 }
+        ],
+        contact: ["alice_smith", "bob_jones"]
+    },
+    {
+        nom: "Babacar Ba",
+        username: "Mr Ba",
+        status: "",
+        password: "pass123",
+        img: "../img/profile8.png",
+        messages: [
+            { text: "Bonjour tu viendra!", date: " 10:10" ,user:0},
+            { text: "OUi je viendrais", date: " 10:10",user:"" },
+            { text: "D'accord", date: " 10:10",user:0 }
+        ],
+        contact: ["john_doe", "bob_jones"]
     }
 ];
 
@@ -164,7 +190,7 @@ function detailsUser(position){
 
 function getCurrentDate(){
     const d = new Date();
-    return `${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`
+    return `${d.getHours()}:${d.getMinutes()}`
 }
 
 function isWritting(){
@@ -185,21 +211,29 @@ function login(username,password){
     // let user= users.filter(u=>u.username===username && u.password===password)
 }
 
-function printMessages(user){
+function printMessages(user) {
     msgOwner.innerHTML = `${user.nom}`;
-    messages.innerHTML = ``;
-    profilImg.src=`${user.img}`;
-    user.messages.forEach(function(msg){
+    messages.innerHTML = '';
+    profilImg.src = `${user.img}`;
+
+    user.messages.forEach(function (msg, index) {
+        // Check if the user value is numeric
+        const isNewMessage = typeof msg.user === 'number';
+        const messageClass = isNewMessage ? "new" : "";
+
         messages.innerHTML += `
-        <div class="message">
-            <div class="text">
-                ${msg.text}
+            <div class="message ${messageClass}">
+                <div class="text ${messageClass}">
+                    ${msg.text}
+                </div>
+                <div class="date ${messageClass}"><span>${msg.date}</span></div>
             </div>
-            <div class="date"><span>${msg.date}</span></div>
-        </div>
-        `
+        `;
     });
 }
+
+
+
 
 
 //
@@ -241,7 +275,6 @@ btnSend.addEventListener('click',function(){
 
 const deleteButton = document.querySelector(".fa-delete-left");
 
-// Function to delete all messages of the user with id "msgOwner"
 function deleteMessages() {
     if (posUserActual === -1 || posConnectedUser === -1) {
         return;
@@ -252,11 +285,9 @@ function deleteMessages() {
     // Clear all messages of the selected user
     selectedUser.messages = [];
 
-    // Update the displayed messages
     detailsUser(posUserActual);
 }
 
-// Event listener for the delete button
 deleteButton.addEventListener('click', deleteMessages);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -264,7 +295,6 @@ deleteButton.addEventListener('click', deleteMessages);
 
 const rightBracketIcon = document.querySelector(".fa-right-from-bracket");
 
-// Event listener for the right-from-bracket icon
 rightBracketIcon.addEventListener('click', function () {
     container.classList.add('hide');
     connexion.classList.remove('hide');
@@ -280,22 +310,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     icons.forEach((icon, index) => {
         icon.addEventListener('click', function () {
-            // Remove 'active' class from all icons
             icons.forEach(i => i.classList.remove('active'));
 
-            // Add 'active' class to the clicked icon
             this.classList.add('active');
 
-            // Update the title based on the clicked icon
             const titles = ['Messages', 'Groupes', 'Diffusion', 'Archives', 'Nouveau'];
             title.textContent = titles[index];
 
-            // Call the printList function after updating the icon
             printList();
         });
     });
 
-    // Set the default title to "Messages" and apply initial styling
     icons[0].classList.add('active');
     title.textContent = 'Messages';
 
@@ -307,13 +332,89 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const plusIcon = document.querySelector(".fa-plus");
 const addUserForm = document.querySelector(".add_user_form");
+const btnAnnuler = document.querySelector(".btnAnnuler");
+const btnAddUser = document.querySelector(".btnAddUser");
 
 plusIcon.addEventListener('click', function () {
-    // Toggle visibility of the add user form
     addUserForm.classList.toggle('hide');
-    // Apply blur effect to the container if needed
     container.classList.toggle('blur');
 });
+btnAddUser.addEventListener('click', function () {
+    const nom = document.querySelector("#nom").value.trim();
+    const username = document.querySelector("#username").value.trim();
+    const password = "p1"; 
+    const img = "../img/profile14.png";
+
+    if (!nom || !username) {
+        alert("Please enter both name and username.");
+        return;
+    }
+
+    const newUser = {
+        nom: nom,
+        username: username,
+        status: "",
+        password: password,
+        img: img,
+        messages: [],
+        contact: []
+    };
+
+    users.push(newUser);
+
+    // console.log("New user added:", newUser);
+    // console.log("Updated users array:", users);
+
+    printList();
+
+    addUserForm.classList.add('hide');
+    container.classList.toggle('blur');
+
+    document.querySelector("#nom").value = "";
+    document.querySelector("#username").value = "";
+});
+
+btnAnnuler.addEventListener('click', function () {
+    addUserForm.classList.toggle('hide');
+    container.classList.toggle('blur');
+});
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.querySelector('.searchbar');
+
+    function filterUsers(searchQuery, activeIconClass) {
+        const filteredUsers = users.filter(user => {
+            const nameMatches = user.nom.toLowerCase().includes(searchQuery.toLowerCase());
+            
+            const iconMatches = (activeIconClass === 'fa-archive' && user.status === 'archiver') ||
+                                (activeIconClass === 'fa-message' && user.status !== 'archiver');
+            
+            return nameMatches && iconMatches;
+        });
+
+        printFilteredList(filteredUsers);
+    }
+
+    searchInput.addEventListener('input', function () {
+        const searchQuery = this.value.trim();
+        const activeIcon = document.querySelector('.option i.active');
+        const activeIconClass = activeIcon ? activeIcon.classList[1] : '';
+        filterUsers(searchQuery, activeIconClass);
+    });
+
+    function printFilteredList(filteredUsers) {
+        list.innerHTML = '';
+
+        filteredUsers.forEach(function (usr, i) {
+            if (usr.username !== users[posConnectedUser].username) {
+                list.innerHTML += `<div class="item"><div class="img-info"><img src="${usr.img}" alt="" class="profilImg"></div><div  onclick="detailsUser(${i})">${usr.nom}</div></div>`;
+            }
+        });
+    }
+});
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
